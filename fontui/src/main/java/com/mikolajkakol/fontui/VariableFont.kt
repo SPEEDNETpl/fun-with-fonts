@@ -105,6 +105,23 @@ fun VariableFlex() = Column {
 }
 
 @Composable
+fun Swash() = Column {
+    Text(
+        text = "OpenType Variable Fonts",
+        fontFamily = FontFamily(Font(R.font.sansita_swashed)),
+    )
+    val annotatedString = buildAnnotatedString {
+        withStyle(style = SpanStyle(fontFeatureSettings = "swsh,salt")) {
+            append("OpenType Variable Fonts")
+        }
+    }
+    Text(
+        text = annotatedString,
+        fontFamily = FontFamily(Font(R.font.sansita_swashed)),
+    )
+}
+
+@Composable
 fun FontFeature() = Column {
     val text = buildAnnotatedString {
         append("0")

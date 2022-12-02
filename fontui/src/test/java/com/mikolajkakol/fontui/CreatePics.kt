@@ -45,6 +45,7 @@ class CreatePics {
         pic("VariableSlabQuickNEasy") { VariableSlabQuickNEasy() }
         pic("VariableSlab") { VariableSlab() }
         pic("VariableFlex") { VariableFlex() }
+        pic("Swash") { Swash() }
         pic("FontFeature") { FontFeature() }
     }
 }
