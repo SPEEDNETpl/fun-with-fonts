@@ -16,7 +16,7 @@ class CreatePics {
     @get:Rule
     val paparazzi = Paparazzi(
         deviceConfig = PIXEL_6.copy(
-            screenWidth = 720,
+            screenWidth = 1000,
             screenHeight = 1280,
             density = Density.XXXHIGH,
             softButtons = false,
@@ -47,5 +47,11 @@ class CreatePics {
         pic("VariableFlex") { VariableFlex() }
         pic("Swash") { Swash() }
         pic("FontFeature") { FontFeature() }
+    }
+
+    @Test
+    fun shaderFont() {
+        pic("GradientFont") { GradientFont() }
+        pic("BitmapFont") { BitmapFont() }
     }
 }
