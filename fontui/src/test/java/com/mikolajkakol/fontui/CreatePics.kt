@@ -52,6 +52,8 @@ class CreatePics {
     @Test
     fun shaderFont() {
         pic("GradientFont") { GradientFont() }
+        pic("GradientFontTileMode") { GradientFontTileMode() }
         pic("BitmapFont") { BitmapFont() }
+        pic("ShadersComposition") { ShadersComposition() }
     }
 }

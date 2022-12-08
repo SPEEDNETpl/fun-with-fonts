@@ -1,20 +1,10 @@
 package com.mikolajkakol.fontui
 
-import android.graphics.BitmapFactory
+import android.graphics.*
 import android.graphics.BlendMode
-import android.graphics.ComposeShader
 import android.graphics.Matrix
-import android.graphics.PorterDuff
-import android.graphics.RuntimeShader
 import android.os.Build
-import androidx.annotation.RequiresApi
-import androidx.compose.animation.core.LinearEasing
-import androidx.compose.animation.core.RepeatMode
-import androidx.compose.animation.core.animateFloat
-import androidx.compose.animation.core.infiniteRepeatable
-import androidx.compose.animation.core.rememberInfiniteTransition
-import androidx.compose.animation.core.tween
-import androidx.compose.foundation.background
+import androidx.compose.animation.core.*
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -23,20 +13,14 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.*
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.ImageShader
-import androidx.compose.ui.graphics.LinearGradientShader
-import androidx.compose.ui.graphics.ShaderBrush
-import androidx.compose.ui.graphics.TileMode
-import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.text.ParagraphStyle
-import androidx.compose.ui.text.SpanStyle
-import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.*
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontVariation
-import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -50,39 +34,64 @@ private val shaderFont = androidx.compose.ui.text.font.FontFamily(
     )
 )
 
+private val rainbowColors = listOf(Color.Red, Color.Yellow, Color.Green, Color.Blue, Color.Magenta)
+
 @Composable
 fun GradientFont() = Column {
-    val pxValue = LocalDensity.current.run { 70.dp.toPx() }
-
-    val shader = remember {
-        val m = Matrix()
-        m.postRotate(50f)
-        LinearGradientShader(
-            from = Offset(0f, 0f),
-            to = Offset(0f, pxValue),
-            colors = listOf(Color.Red, Color.Green, Color.Blue),
-            tileMode = TileMode.Mirror,
-        )
-            .also { it.setLocalMatrix(m) }
-    }
-    RenderText(remember { ShaderBrush(shader) })
+    val brush = remember { Brush.linearGradient(colors = rainbowColors) }
+    RenderText(brush, lines = 6)
 }
 
 @Composable
-fun BitmapFont() = Column(Modifier.background(Color.Black)) {
+private fun RenderText(brush: Brush, lines: Int = 4, modifier: Modifier = Modifier) {
+    val text = buildAnnotatedString {
+        withStyle(ParagraphStyle(lineHeight = 12.sp)) {
+            append((demoText + "\n").repeat(lines).trim())
+        }
+    }
+    Text(
+        modifier = modifier,
+        text = text,
+        fontFamily = shaderFont,
+        style = TextStyle(brush = brush),
+    )
+}
+
+@Composable
+fun GradientFontTileMode() = Column {
+    val width = LocalDensity.current.run { 40.dp.toPx() }
+
+    RenderText(remember { gradientBrush(width, TileMode.Clamp) }, 1)
+    RenderText(remember { gradientBrush(width, TileMode.Mirror) }, 1)
+    RenderText(remember { gradientBrush(width, TileMode.Repeated) }, 1)
+    RenderText(remember { gradientBrush(width, TileMode.Decal) }, 1)
+}
+
+private fun gradientBrush(pxValue: Float, tileMode: TileMode) =
+    Brush.linearGradient(
+        start = Offset(0f, 0f),
+        end = Offset(pxValue, 0f),
+        colors = rainbowColors,
+        tileMode = tileMode,
+    )
+
+@Composable
+fun BitmapFont() = Column {
     val resources = LocalContext.current.resources
 
-    val shader = remember {
-        val m = Matrix()
-        val scale = 0.4f
-        m.postScale(scale, scale)
-
-        val bitmap = BitmapFactory.decodeResource(resources, R.drawable.pattern)
+    val brush = remember {
+        val bitmap = BitmapFactory
+            .decodeResource(resources, R.drawable.cheetah_tile)
             .asImageBitmap()
-        ImageShader(bitmap, TileMode.Mirror, TileMode.Repeated)
-            .also { it.setLocalMatrix(m) }
+        val shader = ImageShader(bitmap, TileMode.Repeated, TileMode.Repeated)
+
+        val transform = Matrix()
+        transform.postScale(0.4f, 0.4f)
+        shader.setLocalMatrix(transform)
+
+        ShaderBrush(shader)
     }
-    RenderText(remember { ShaderBrush(shader) })
+    RenderText(brush)
 }
 
 @Composable
@@ -90,61 +99,70 @@ fun ShadersComposition() = Column {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) return
 
     val resources = LocalContext.current.resources
-    val pxValue = LocalDensity.current.run { 70.dp.toPx() }
+    val pxValue = LocalDensity.current.run { 60.dp.toPx() }
 
-    val shader = remember {
-        val m = Matrix()
-        val scale = 1.0f
-        m.postScale(scale, scale)
+    val brush = remember {
 
         val imageShader = ImageShader(
             BitmapFactory.decodeResource(resources, R.drawable.cheetah_tile)
                 .asImageBitmap(), TileMode.Mirror, TileMode.Repeated
-        ).also { it.setLocalMatrix(m) }
+        )
+
+        val blackColorShader = LinearGradientShader(
+            from = Offset(0f, 0f),
+            to = Offset(1f, 1f),
+            colors = listOf(Color.Black, Color.Black),
+            tileMode = TileMode.Clamp,
+        )
 
         val grayImageShader = ComposeShader(
             imageShader,
-            LinearGradientShader(
-                from = Offset(0f, 0f),
-                to = Offset(1f, 1f),
-                colors = listOf(Color.Black, Color.Black),
-                tileMode = TileMode.Clamp,
-            ),
+            blackColorShader,
             BlendMode.SATURATION
         )
 
         val gradientShader = LinearGradientShader(
-            from = Offset(0f, 0f),
+            from = Offset.Zero,
             to = Offset(0f, pxValue),
-            colors = listOf(Color.Red, Color.Green, Color.Blue),
+            colors = rainbowColors,
             tileMode = TileMode.Mirror,
         )
 
-        ComposeShader(grayImageShader, gradientShader, PorterDuff.Mode.MULTIPLY)
+        val shader = ComposeShader(grayImageShader, gradientShader, PorterDuff.Mode.MULTIPLY)
+        ShaderBrush(shader)
     }
-    RenderText(remember { ShaderBrush(shader) })
-}
-
-@Composable
-private fun RenderText(brush: ShaderBrush) {
-    val text = remember {
-        val msg = (demoText + "\n").repeat(4).trim()
-        buildAnnotatedString {
-            withStyle(ParagraphStyle(lineHeight = 12.sp)) {
-                withStyle(SpanStyle(brush = brush)) {
-                    append(msg)
-                }
-            }
-        }
-    }
-    Text(
-        text = text,
-        fontFamily = shaderFont,
-    )
+    RenderText(brush)
 }
 
 private const val DURATION = 4000f
 private const val SHADER_COLOR = """
+    uniform float2 iResolution;
+    half4 main(float2 fragCoord) {
+      float2 scaled = fragCoord/iResolution.xy;
+      return half4(scaled, 0, 1);
+   }
+"""
+
+@Composable
+fun ShaderFont() = Column {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
+
+    val shader = remember { RuntimeShader(SHADER_COLOR) }
+    val brush = remember { ShaderBrush(shader) }
+
+    RenderText(
+        brush,
+        modifier = Modifier.onSizeChanged {
+            shader.setFloatUniform(
+                "iResolution",
+                it.width.toFloat(),
+                it.height.toFloat()
+            )
+        },
+    )
+}
+
+private const val SHADER_ANIM_COLOR = """
     uniform float2 iResolution;
     uniform float iTime;
     uniform float iDuration;
@@ -156,11 +174,11 @@ private const val SHADER_COLOR = """
 """
 
 @Composable
-fun ShaderFont() = Column {
+fun ShaderFontAnimated() = Column {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
 
     val shader = remember {
-        RuntimeShader(SHADER_COLOR)
+        RuntimeShader(SHADER_ANIM_COLOR)
             .apply { setFloatUniform("iDuration", DURATION) }
     }
     val brush = remember { ShaderBrush(shader) }
@@ -178,25 +196,17 @@ fun ShaderFont() = Column {
     )
     shader.setFloatUniform("iTime", timePassed)
 
-    val text = remember {
-        val msg = (demoText + "\n").repeat(4).trim()
-        buildAnnotatedString {
-            withStyle(SpanStyle(brush = brush)) {
-                append(msg)
+    RenderText(
+        brush = brush,
+        modifier = Modifier
+            .onSizeChanged {
+                shader.setFloatUniform(
+                    "iResolution",
+                    it.width.toFloat(),
+                    it.height.toFloat()
+                )
             }
-        }
-    }
-    Text(
-        modifier = Modifier.alpha(1 - (timePassed + 1) / 1000 / DURATION),
-        text = text,
-        fontFamily = shaderFont,
-        onTextLayout = {
-            shader.setFloatUniform(
-                "iResolution",
-                it.size.width.toFloat(),
-                it.size.height.toFloat()
-            )
-        }
+            .alpha(1 - (timePassed + 1) / 1000 / DURATION),
     )
 }
 
