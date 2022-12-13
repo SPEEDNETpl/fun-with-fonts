@@ -15,7 +15,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.mikolajkakol.fontui.ShaderFontAnimated
+import com.mikolajkakol.fontui.*
 
 class MainActivity : ComponentActivity() {
 
@@ -32,7 +32,16 @@ class MainActivity : ComponentActivity() {
                     val navController = rememberNavController()
                     NavHost(navController = navController, startDestination = "list") {
                         composable("list") { Composables(navController) }
-                        composable("shaderAnim1") { ShaderFontAnimated() }
+                        composable("shaderPerf1") {
+                            repeat(30) {
+                                ShaderPerformance1()
+                            }
+                        }
+                        composable("shaderPerf2") {
+                            repeat(30) {
+                                ShaderPerformance2()
+                            }
+                        }
                     }
                 }
             }
@@ -41,8 +50,11 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     private fun Composables(navController: NavHostController) = Column {
-        Button(onClick = { navController.navigate("shaderAnim1") }) {
-            Text(text = "shaderAnim1")
+        Button(onClick = { navController.navigate("shaderPerf1") }) {
+            Text(text = "Shader performance 1")
+        }
+        Button(onClick = { navController.navigate("shaderPerf2") }) {
+            Text(text = "Shader performance 2")
         }
 
     }
