@@ -14,24 +14,6 @@ import androidx.compose.ui.graphics.*
 import androidx.compose.ui.graphics.Shader
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.text.*
-import androidx.compose.ui.unit.sp
-
-private const val DURATION = 200f
-private const val SHADER_ANIM_COLOR = """
-    uniform float2 iResolution;
-    uniform float iTime;
-    uniform float iDuration;
-
-    half4 main(in float2 fragCoord) {
-      float2 scaled = abs(1.0-mod(fragCoord/iResolution.xy+iTime/(iDuration/2.0),2.0));
-      return half4(scaled, 0, 1.0);
-    }
-"""
-
-private val infiniteAnimation = infiniteRepeatable<Float>(
-    tween(DURATION.toInt(), easing = LinearEasing),
-    RepeatMode.Restart
-)
 
 @Composable
 fun ShaderPerformance1() = Column {
@@ -45,8 +27,9 @@ fun ShaderPerformance1() = Column {
     val time by timeAnimation()
     shader.setFloatUniform("iTime", time)
 
-    RenderText(
-        brush = brush,
+    Text(
+        text = prefText,
+        style = TextStyle(brush = brush),
         modifier = Modifier
             .onSizeChanged {
                 shader.setFloatUniform(
@@ -59,26 +42,26 @@ fun ShaderPerformance1() = Column {
     )
 }
 
-
 @Composable
 fun ShaderPerformance2() {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
 
-    var brush by remember { mutableStateOf(AnimatableShaderBrush()) }
+    var brush by remember { mutableStateOf(AnimShaderBrush()) }
     val time by timeAnimation()
 
     LaunchedEffect(time) {
         brush = brush.setTime(time)
     }
 
-    RenderText(
-        brush = brush,
+    Text(
+        text = prefText,
+        style = TextStyle(brush = brush),
     )
 }
 
-
+@Suppress("EqualsOrHashCode")
 @RequiresApi(Build.VERSION_CODES.TIRAMISU)
-class AnimatableShaderBrush(val time: Float = -1f) : ShaderBrush() {
+private class AnimShaderBrush(val time: Float = -1f) : ShaderBrush() {
     private var internalShader: RuntimeShader? = null
     private var previousSize: Size? = null
 
@@ -97,21 +80,35 @@ class AnimatableShaderBrush(val time: Float = -1f) : ShaderBrush() {
         return shader
     }
 
-    fun setTime(newTime: Float): AnimatableShaderBrush {
-        return AnimatableShaderBrush(newTime).apply {
-            this@apply.internalShader = this@AnimatableShaderBrush.internalShader
-            this@apply.previousSize = this@AnimatableShaderBrush.previousSize
+    fun setTime(newTime: Float): AnimShaderBrush {
+        return AnimShaderBrush(newTime).apply {
+            this@apply.internalShader = this@AnimShaderBrush.internalShader
+            this@apply.previousSize = this@AnimShaderBrush.previousSize
         }
     }
 
     override fun equals(other: Any?): Boolean {
-        if (other !is AnimatableShaderBrush) return false
+        if (other !is AnimShaderBrush) return false
         if (other.internalShader != this.internalShader) return false
         if (other.previousSize != this.previousSize) return false
         if (other.time != this.time) return false
         return true
     }
 }
+
+private const val DURATION = 200f
+private const val SHADER_ANIM_COLOR = """
+    uniform float2 iResolution;
+    uniform float iTime;
+    uniform float iDuration;
+
+    half4 main(in float2 fragCoord) {
+      float2 scaled = abs(1.0-mod(fragCoord/iResolution.xy+iTime/(iDuration/2.0),2.0));
+      return half4(scaled, 0, 1.0);
+    }
+"""
+
+private val prefText = (demoText + "\n").repeat(10).trim()
 
 @Composable
 private fun timeAnimation() = rememberInfiniteTransition().animateFloat(
@@ -120,16 +117,8 @@ private fun timeAnimation() = rememberInfiniteTransition().animateFloat(
     animationSpec = infiniteAnimation
 )
 
-@Composable
-private fun RenderText(brush: Brush, lines: Int = 4, modifier: Modifier = Modifier) {
-    val text = buildAnnotatedString {
-        withStyle(ParagraphStyle(lineHeight = 12.sp)) {
-            append((demoText + "\n").repeat(lines).trim())
-        }
-    }
-    Text(
-        modifier = modifier,
-        text = text,
-        style = TextStyle(brush = brush),
-    )
-}
+private val infiniteAnimation = infiniteRepeatable<Float>(
+    tween(DURATION.toInt(), easing = LinearEasing),
+    RepeatMode.Restart
+)
+
