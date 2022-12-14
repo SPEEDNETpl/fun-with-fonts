@@ -11,8 +11,14 @@ import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import java.util.*
 
+/**
+ * When clicking run test in IDE ensure that app variant is set to benchmark!!!
+ */
 @RunWith(Parameterized::class)
-class ShaderPerformanceTest(private val loop: Int, private val id: String) {
+class ShaderPerformanceTest(
+    @Suppress("unused") private val loop: Int,
+    private val id: String
+) {
     @get:Rule
     val benchmarkRule = MacrobenchmarkRule()
 
@@ -21,9 +27,10 @@ class ShaderPerformanceTest(private val loop: Int, private val id: String) {
         @Parameterized.Parameters(name = "anim{1} loop{0}")
         @JvmStatic
         fun initParameters() = buildList {
-            repeat(4) {
+            repeat(10) {
                 add(arrayOf(it, "1"))
                 add(arrayOf(it, "2"))
+                add(arrayOf(it, "3"))
             }
         }
     }
@@ -33,7 +40,7 @@ class ShaderPerformanceTest(private val loop: Int, private val id: String) {
         packageName = "com.mikolajkakol.myapplication",
         metrics = listOf(FrameTimingMetric()),
         compilationMode = CompilationMode.Full(),
-        iterations = 5,
+        iterations = 3,
         startupMode = StartupMode.HOT,
         setupBlock = {
             startActivityAndWait()

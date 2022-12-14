@@ -42,6 +42,11 @@ class MainActivity : ComponentActivity() {
                                 ShaderPerformance2()
                             }
                         }
+                        composable("shaderPerf3") {
+                            repeat(30) {
+                                ShaderPerformance3()
+                            }
+                        }
                     }
                 }
             }
@@ -55,6 +60,9 @@ class MainActivity : ComponentActivity() {
         }
         Button(onClick = { navController.navigate("shaderPerf2") }) {
             Text(text = "Shader performance 2")
+        }
+        Button(onClick = { navController.navigate("shaderPerf3") }) {
+            Text(text = "Shader performance 3")
         }
 
     }
