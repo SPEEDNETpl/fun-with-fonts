@@ -15,58 +15,61 @@ fun main() {
     val prefix = "test_results2"
     val inputData = parseResults(File(workingDir, prefix))
 
-    val bunch = GGBunch()
-    bunch.addPlot(plotLine(inputData, 50), 0, 0)
-    bunch.addPlot(plotLine(inputData, 90), 0, 400)
-    bunch.addPlot(plotLine(inputData, 95), 0, 800)
-    ggsave(bunch, "$prefix.png", path = workingDir.absolutePath)
-    ggsave(plotBox(inputData), "${prefix}_plot_box.png", path = workingDir.absolutePath)
-    ggsave(plotViolin(inputData), "${prefix}_plot_violin.png", path = workingDir.absolutePath)
-    ggsave(plotLine(inputData, 50), "${prefix}_plot_line_50.png", path = workingDir.absolutePath)
-    ggsave(plotLine(inputData, 90), "${prefix}_plot_lines_90.png", path = workingDir.absolutePath)
-    ggsave(plotLine(inputData, 95), "${prefix}_plot_lines_95.png", path = workingDir.absolutePath)
+    saveMultiple("${prefix}_plot_line", workingDir) { plotLine(inputData, it) }
+    saveMultiple("${prefix}_plot_violin", workingDir) { plotViolin(inputData, it) }
+    saveMultiple("${prefix}_plot_box", workingDir) { plotBox(inputData, it) }
 }
 
-private fun plotBox(inputData: List<TestRun>): Plot {
+fun saveMultiple(name: String, workingDir: File, plotFactory: (percentile: Int) -> Plot) {
+    val bunch = GGBunch()
+    bunch.addPlot(plotFactory(50), 0, 0)
+    bunch.addPlot(plotFactory(90), 0, 400)
+    bunch.addPlot(plotFactory(95), 0, 800)
+    ggsave(bunch, "${name}_mix.png", path = workingDir.absolutePath)
+    ggsave(plotFactory(50), "${name}_50.png", path = workingDir.absolutePath)
+    ggsave(plotFactory(90), "${name}_90.png", path = workingDir.absolutePath)
+    ggsave(plotFactory(95), "${name}_95.png", path = workingDir.absolutePath)
+}
+
+private fun plotBox(inputData: List<TestRun>, percentile: Int): Plot {
     val data = mapOf<String, Any>(
         "anim" to inputData.map { it.name },
-        "time" to inputData.map { it.results[90] },
-        "min" to inputData.map { it.results[50] },
-        "max" to inputData.map { it.results[95] }
+        "time" to inputData.map { it.results[percentile] },
     )
     return ggplot(data) { x = "anim"; y = "time"; fill = "anim" } +
-            geomBoxplot() +
-            geomJitter()
+            title(percentile) +
+            geomBoxplot(showLegend = false) +
+            geomJitter(showLegend = false, width = 0.35)
 }
 
-private fun plotViolin(inputData: List<TestRun>): Plot {
+private fun plotViolin(inputData: List<TestRun>, percentile: Int): Plot {
     val data = mapOf<String, Any>(
-        "supp" to inputData.map { it.name },
-        "time" to inputData.map { it.results[90] },
-        "min" to inputData.map { it.results[50] },
-        "max" to inputData.map { it.results[95] }
+        "anim" to inputData.map { it.name },
+        "time" to inputData.map { it.results[percentile] },
     )
-    return ggplot(data) { x = "supp"; y = "time"; fill = "supp" } +
-            geomViolin() +
-            geomJitter()
+    return ggplot(data) { x = "anim"; y = "time"; fill = "anim" } +
+            title(percentile) +
+            geomViolin(showLegend = false) +
+            geomJitter(showLegend = false, width = 0.35)
 }
 
 private fun plotLine(lineData: List<TestRun>, percentile: Int): Plot {
     val data = mapOf(
         "iteration" to lineData.map { it.loop },
         "time" to lineData.map { it.results[percentile] },
-        "cond" to lineData.map { it.name + " " + percentile },
-        "g" to lineData.map { it.name },
+        "anim" to lineData.map { it.name },
     )
 
     return letsPlot(data) +
-            ggtitle("Average time for $percentile percentile") +
+            title(percentile) +
             geomLine {
                 x = "iteration"
                 y = "time"
-                color = "cond"
+                color = "anim"
             }
 }
+
+private fun title(percentile: Int) = ggtitle("Average time for $percentile percentile")
 
 private fun getWorkingDir() =
     File((System.getProperty("user.dir") + "/macrobenchmark/src/main/resources"))
