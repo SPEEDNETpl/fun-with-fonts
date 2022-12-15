@@ -1,0 +1,1012 @@
+ShaderPerformanceTest_animation[anim1 loop0]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95   9,8,   P99  10,4
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,6,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop0]
+frameDurationCpuMs   P50   8,6,   P90  10,1,   P95  10,6,   P99  11,8
+frameOverrunMs   P50  -5,4,   P90   1,6,   P95   1,8,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop0]
+frameDurationCpuMs   P50   6,1,   P90   8,4,   P95   9,6,   P99  10,8
+frameOverrunMs   P50  -9,2,   P90  -6,8,   P95  -6,2,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop1]
+frameDurationCpuMs   P50   9,0,   P90  10,4,   P95  11,3,   P99  12,1
+frameOverrunMs   P50  -4,7,   P90   1,7,   P95   1,8,   P99   2,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop1]
+frameDurationCpuMs   P50   7,6,   P90   9,2,   P95   9,9,   P99  11,6
+frameOverrunMs   P50  -7,7,   P90  -6,1,   P95  -5,4,   P99  -3,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop1]
+frameDurationCpuMs   P50   6,5,   P90   8,5,   P95   9,1,   P99  10,3
+frameOverrunMs   P50  -8,9,   P90  -7,0,   P95  -6,3,   P99  -5,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop2]
+frameDurationCpuMs   P50   7,6,   P90   9,5,   P95   9,8,   P99  10,6
+frameOverrunMs   P50  -7,8,   P90  -5,9,   P95  -5,6,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop2]
+frameDurationCpuMs   P50   7,4,   P90   9,2,   P95   9,6,   P99  10,4
+frameOverrunMs   P50  -7,9,   P90  -6,1,   P95  -5,6,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop2]
+frameDurationCpuMs   P50   8,3,   P90  11,0,   P95  12,0,   P99  13,9
+frameOverrunMs   P50  -7,0,   P90   1,6,   P95   1,8,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop3]
+frameDurationCpuMs   P50   7,6,   P90   9,5,   P95   9,9,   P99  10,7
+frameOverrunMs   P50  -7,0,   P90  -3,5,   P95  -3,3,   P99  -2,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop3]
+frameDurationCpuMs   P50   9,2,   P90  10,8,   P95  11,4,   P99  12,6
+frameOverrunMs   P50   1,4,   P90   1,8,   P95   1,9,   P99   2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop3]
+frameDurationCpuMs   P50   6,4,   P90   8,2,   P95   8,9,   P99   9,6
+frameOverrunMs   P50  -8,9,   P90  -7,1,   P95  -6,5,   P99  -5,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop4]
+frameDurationCpuMs   P50   7,5,   P90   9,2,   P95   9,6,   P99  10,4
+frameOverrunMs   P50  -7,9,   P90  -6,2,   P95  -5,8,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop4]
+frameDurationCpuMs   P50   8,3,   P90  10,2,   P95  10,9,   P99  12,2
+frameOverrunMs   P50  -7,0,   P90   1,6,   P95   1,8,   P99   2,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop4]
+frameDurationCpuMs   P50   6,7,   P90   8,5,   P95   9,2,   P99  10,4
+frameOverrunMs   P50  -8,8,   P90  -7,0,   P95  -6,4,   P99  -5,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop5]
+frameDurationCpuMs   P50   7,9,   P90   9,7,   P95  10,2,   P99  11,5
+frameOverrunMs   P50  -7,5,   P90  -5,5,   P95  -5,0,   P99  -3,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop5]
+frameDurationCpuMs   P50   7,5,   P90   9,4,   P95   9,9,   P99  10,8
+frameOverrunMs   P50  -7,9,   P90  -6,0,   P95  -5,3,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop5]
+frameDurationCpuMs   P50   7,0,   P90  10,6,   P95  11,9,   P99  13,3
+frameOverrunMs   P50  -8,5,   P90   1,6,   P95   1,7,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop6]
+frameDurationCpuMs   P50   7,7,   P90   9,5,   P95  10,1,   P99  10,5
+frameOverrunMs   P50  -7,6,   P90  -5,9,   P95  -5,2,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop6]
+frameDurationCpuMs   P50   7,6,   P90   8,9,   P95   9,6,   P99  10,6
+frameOverrunMs   P50  -7,8,   P90  -6,4,   P95  -5,8,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop6]
+frameDurationCpuMs   P50   9,3,   P90  11,3,   P95  11,8,   P99  12,7
+frameOverrunMs   P50   1,4,   P90   1,7,   P95   1,8,   P99   2,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop7]
+frameDurationCpuMs   P50   7,5,   P90   9,3,   P95   9,8,   P99  11,5
+frameOverrunMs   P50  -7,8,   P90  -6,0,   P95  -5,2,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop7]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95  10,0,   P99  10,6
+frameOverrunMs   P50  -7,5,   P90  -5,8,   P95  -5,4,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop7]
+frameDurationCpuMs   P50   6,4,   P90   8,1,   P95   9,1,   P99  10,6
+frameOverrunMs   P50  -8,9,   P90  -7,3,   P95  -6,4,   P99  -5,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop8]
+frameDurationCpuMs   P50   7,8,   P90   9,4,   P95   9,6,   P99  10,5
+frameOverrunMs   P50  -7,6,   P90  -6,1,   P95  -5,6,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop8]
+frameDurationCpuMs   P50   7,4,   P90   9,0,   P95   9,5,   P99  11,2
+frameOverrunMs   P50  -7,9,   P90  -6,3,   P95  -5,6,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop8]
+frameDurationCpuMs   P50   9,8,   P90  12,0,   P95  13,6,   P99  15,5
+frameOverrunMs   P50   1,5,   P90   1,9,   P95   2,1,   P99   3,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop9]
+frameDurationCpuMs   P50   7,8,   P90   9,6,   P95  10,2,   P99  11,2
+frameOverrunMs   P50  -7,5,   P90  -5,5,   P95  -5,2,   P99  -3,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop9]
+frameDurationCpuMs   P50   7,5,   P90   9,4,   P95   9,8,   P99  11,1
+frameOverrunMs   P50  -7,9,   P90  -6,1,   P95  -5,5,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop9]
+frameDurationCpuMs   P50   6,6,   P90   8,4,   P95   8,8,   P99  10,8
+frameOverrunMs   P50  -8,9,   P90  -7,0,   P95  -6,4,   P99  -5,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop10]
+frameDurationCpuMs   P50   7,4,   P90   8,9,   P95   9,6,   P99  10,3
+frameOverrunMs   P50  -7,9,   P90  -6,5,   P95  -5,8,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop10]
+frameDurationCpuMs   P50   9,5,   P90  11,2,   P95  11,9,   P99  13,7
+frameOverrunMs   P50   1,4,   P90   1,7,   P95   1,8,   P99   2,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop11]
+frameDurationCpuMs   P50   8,9,   P90  10,4,   P95  10,9,   P99  11,6
+frameOverrunMs   P50  -4,7,   P90   1,6,   P95   1,8,   P99   2,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop11]
+frameDurationCpuMs   P50   9,2,   P90  10,8,   P95  11,4,   P99  13,1
+frameOverrunMs   P50   1,4,   P90   1,8,   P95   1,9,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop11]
+frameDurationCpuMs   P50   9,9,   P90  12,5,   P95  13,6,   P99  15,1
+frameOverrunMs   P50   1,5,   P90   1,9,   P95   2,1,   P99   2,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop12]
+frameDurationCpuMs   P50   7,8,   P90   9,4,   P95  10,0,   P99  11,0
+frameOverrunMs   P50  -7,4,   P90  -5,8,   P95  -5,4,   P99  -4,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop12]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95   9,9,   P99  11,3
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,6,   P99  -3,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop12]
+frameDurationCpuMs   P50   6,1,   P90   8,5,   P95   8,9,   P99  10,4
+frameOverrunMs   P50  -9,2,   P90  -6,9,   P95  -6,6,   P99  -5,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop13]
+frameDurationCpuMs   P50   7,8,   P90   9,3,   P95   9,9,   P99  10,3
+frameOverrunMs   P50  -7,6,   P90  -5,9,   P95  -5,4,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop13]
+frameDurationCpuMs   P50   7,5,   P90   9,4,   P95  10,0,   P99  11,2
+frameOverrunMs   P50  -7,8,   P90  -5,9,   P95  -5,2,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop13]
+frameDurationCpuMs   P50  6,2,   P90  8,2,   P95  8,5,   P99  9,2
+frameOverrunMs   P50  -9,1,   P90  -7,3,   P95  -6,9,   P99  -6,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop14]
+frameDurationCpuMs   P50   7,9,   P90   9,4,   P95   9,8,   P99  10,9
+frameOverrunMs   P50  -7,4,   P90  -5,9,   P95  -5,5,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop14]
+frameDurationCpuMs   P50   7,6,   P90   9,2,   P95   9,8,   P99  11,0
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,4,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop14]
+frameDurationCpuMs   P50  6,1,   P90  7,7,   P95  8,1,   P99  9,1
+frameOverrunMs   P50  -9,3,   P90  -7,7,   P95  -7,2,   P99  -6,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop15]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95  10,0,   P99  11,0
+frameOverrunMs   P50  -7,6,   P90  -5,8,   P95  -5,3,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop15]
+frameDurationCpuMs   P50   7,5,   P90   9,3,   P95   9,9,   P99  10,8
+frameOverrunMs   P50  -7,8,   P90  -6,2,   P95  -5,4,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop15]
+frameDurationCpuMs   P50   6,5,   P90   8,5,   P95   8,9,   P99   9,7
+frameOverrunMs   P50  -8,8,   P90  -6,9,   P95  -6,6,   P99  -5,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop16]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95   9,9,   P99  10,8
+frameOverrunMs   P50  -7,8,   P90  -6,0,   P95  -5,6,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop16]
+frameDurationCpuMs   P50   7,4,   P90   9,1,   P95   9,6,   P99  11,3
+frameOverrunMs   P50  -8,0,   P90  -6,3,   P95  -5,7,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop16]
+frameDurationCpuMs   P50   9,6,   P90  11,6,   P95  12,4,   P99  13,6
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,0,   P99   2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop17]
+frameDurationCpuMs   P50   7,5,   P90   9,5,   P95  10,1,   P99  11,0
+frameOverrunMs   P50  -7,9,   P90  -5,7,   P95  -5,2,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop17]
+frameDurationCpuMs   P50   7,4,   P90   8,8,   P95   9,6,   P99  10,6
+frameOverrunMs   P50  -8,0,   P90  -6,5,   P95  -5,8,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop17]
+frameDurationCpuMs   P50   6,2,   P90   8,5,   P95   8,9,   P99  10,0
+frameOverrunMs   P50  -9,1,   P90  -6,9,   P95  -6,4,   P99  -5,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop18]
+frameDurationCpuMs   P50   7,7,   P90   9,6,   P95  10,2,   P99  11,8
+frameOverrunMs   P50  -7,7,   P90  -5,8,   P95  -5,3,   P99  -3,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop18]
+frameDurationCpuMs   P50   9,6,   P90  11,5,   P95  12,1,   P99  13,9
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   1,9,   P99   2,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop18]
+frameDurationCpuMs   P50   6,1,   P90   8,3,   P95   9,0,   P99  10,3
+frameOverrunMs   P50  -9,2,   P90  -7,2,   P95  -6,6,   P99  -5,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop19]
+frameDurationCpuMs   P50   7,8,   P90   9,6,   P95  10,3,   P99  11,2
+frameOverrunMs   P50  -7,5,   P90  -5,5,   P95  -4,9,   P99  -3,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop19]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95   9,6,   P99  10,6
+frameOverrunMs   P50  -7,8,   P90  -6,1,   P95  -5,7,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop19]
+frameDurationCpuMs   P50   6,1,   P90   8,2,   P95   8,7,   P99   9,6
+frameOverrunMs   P50  -9,2,   P90  -7,3,   P95  -6,7,   P99  -5,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop20]
+frameDurationCpuMs   P50   7,7,   P90   9,3,   P95   9,9,   P99  10,7
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,5,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop20]
+frameDurationCpuMs   P50   8,7,   P90  10,4,   P95  11,1,   P99  12,7
+frameOverrunMs   P50  -6,5,   P90   1,7,   P95   1,8,   P99   2,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop20]
+frameDurationCpuMs   P50   6,7,   P90   8,4,   P95   9,0,   P99  10,1
+frameOverrunMs   P50  -8,7,   P90  -7,1,   P95  -6,7,   P99  -5,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop21]
+frameDurationCpuMs   P50   8,1,   P90  10,2,   P95  10,6,   P99  12,1
+frameOverrunMs   P50  -7,2,   P90   1,5,   P95   1,7,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop21]
+frameDurationCpuMs   P50   6,4,   P90   8,5,   P95   9,0,   P99   9,5
+frameOverrunMs   P50  -9,0,   P90  -6,9,   P95  -6,6,   P99  -5,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop22]
+frameDurationCpuMs   P50   8,8,   P90  10,3,   P95  10,7,   P99  12,0
+frameOverrunMs   P50  -4,6,   P90   1,7,   P95   1,9,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop22]
+frameDurationCpuMs   P50   8,8,   P90  10,3,   P95  10,7,   P99  12,0
+frameOverrunMs   P50  -4,6,   P90   1,7,   P95   1,9,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop22]
+frameDurationCpuMs   P50   7,8,   P90   9,3,   P95   9,9,   P99  10,7
+frameOverrunMs   P50  -7,5,   P90  -6,1,   P95  -5,5,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop22]
+frameDurationCpuMs   P50   6,7,   P90   8,8,   P95   9,5,   P99  10,9
+frameOverrunMs   P50  -8,8,   P90  -6,7,   P95  -5,9,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop23]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95  10,1,   P99  10,8
+frameOverrunMs   P50  -7,6,   P90  -5,7,   P95  -5,0,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop23]
+frameDurationCpuMs   P50   7,7,   P90   9,5,   P95  10,0,   P99  11,0
+frameOverrunMs   P50  -7,6,   P90   1,3,   P95   1,6,   P99   1,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop23]
+frameDurationCpuMs   P50   6,2,   P90   8,1,   P95   8,7,   P99   9,4
+frameOverrunMs   P50  -9,1,   P90  -7,5,   P95  -6,8,   P99  -5,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop24]
+frameDurationCpuMs   P50   7,3,   P90   8,8,   P95   9,1,   P99   9,6
+frameOverrunMs   P50  -3,5,   P90  -3,1,   P95  -3,0,   P99  -2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop24]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95  10,0,   P99  11,0
+frameOverrunMs   P50  -7,8,   P90  -6,0,   P95  -5,4,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop24]
+frameDurationCpuMs   P50   9,9,   P90  12,3,   P95  13,2,   P99  15,0
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,0,   P99   2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop25]
+frameDurationCpuMs   P50   7,6,   P90   9,2,   P95   9,6,   P99  10,9
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,6,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop25]
+frameDurationCpuMs   P50   7,5,   P90   9,0,   P95   9,5,   P99  10,9
+frameOverrunMs   P50  -7,8,   P90  -6,4,   P95  -5,8,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop25]
+frameDurationCpuMs   P50   8,6,   P90  10,8,   P95  11,6,   P99  13,0
+frameOverrunMs   P50  -6,3,   P90   1,6,   P95   1,7,   P99   2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop26]
+frameDurationCpuMs   P50   7,7,   P90   9,4,   P95   9,9,   P99  10,6
+frameOverrunMs   P50  -7,5,   P90  -5,8,   P95  -5,2,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop26]
+frameDurationCpuMs   P50   9,7,   P90  11,0,   P95  11,5,   P99  12,7
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,0,   P99   2,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop26]
+frameDurationCpuMs   P50   6,4,   P90   8,4,   P95   8,7,   P99   9,4
+frameOverrunMs   P50  -9,0,   P90  -7,0,   P95  -6,5,   P99  -5,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop27]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95  10,1,   P99  10,7
+frameOverrunMs   P50  -7,5,   P90  -5,8,   P95  -5,2,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop27]
+frameDurationCpuMs   P50   7,6,   P90   9,0,   P95   9,3,   P99  10,3
+frameOverrunMs   P50  -7,7,   P90  -6,4,   P95  -6,1,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop27]
+frameDurationCpuMs   P50  6,2,   P90  8,6,   P95  9,1,   P99  9,6
+frameOverrunMs   P50  -9,1,   P90  -6,8,   P95  -6,5,   P99  -5,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop28]
+frameDurationCpuMs   P50   7,8,   P90   9,6,   P95  10,4,   P99  11,7
+frameOverrunMs   P50  -7,6,   P90  -5,8,   P95  -5,0,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop28]
+frameDurationCpuMs   P50   7,3,   P90   8,7,   P95   9,2,   P99  10,2
+frameOverrunMs   P50  -8,0,   P90  -6,5,   P95  -6,0,   P99  -5,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop28]
+frameDurationCpuMs   P50  6,2,   P90  8,0,   P95  8,5,   P99  9,1
+frameOverrunMs   P50  -9,1,   P90  -7,4,   P95  -7,0,   P99  -6,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop29]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95  10,0,   P99  11,4
+frameOverrunMs   P50  -7,4,   P90  -5,9,   P95  -5,2,   P99  -4,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop29]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95   9,9,   P99  10,3
+frameOverrunMs   P50  -7,8,   P90  -6,0,   P95  -5,5,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop29]
+frameDurationCpuMs   P50   6,1,   P90   8,2,   P95   8,6,   P99   9,6
+frameOverrunMs   P50  -9,0,   P90  -7,3,   P95  -6,9,   P99  -5,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop30]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95   9,7,   P99  10,8
+frameOverrunMs   P50  -7,6,   P90  -6,0,   P95  -5,3,   P99  -4,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop30]
+frameDurationCpuMs   P50   7,6,   P90   9,1,   P95   9,5,   P99  11,3
+frameOverrunMs   P50  -7,7,   P90  -6,2,   P95  -5,8,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop30]
+frameDurationCpuMs   P50   6,4,   P90   8,5,   P95   9,1,   P99  10,6
+frameOverrunMs   P50  -9,0,   P90  -6,9,   P95  -6,2,   P99  -5,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop31]
+frameDurationCpuMs   P50   7,1,   P90   9,0,   P95   9,3,   P99  10,1
+frameOverrunMs   P50  -3,4,   P90  -3,1,   P95  -3,0,   P99  -2,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop31]
+frameDurationCpuMs   P50   9,6,   P90  11,4,   P95  12,1,   P99  12,7
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,0,   P99   2,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop31]
+frameDurationCpuMs   P50  10,0,   P90  11,8,   P95  12,6,   P99  14,2
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,0,   P99   2,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop32]
+frameDurationCpuMs   P50   7,7,   P90   9,3,   P95   9,9,   P99  11,1
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,4,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop32]
+frameDurationCpuMs   P50   7,6,   P90   9,2,   P95   9,5,   P99  10,7
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,7,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop32]
+frameDurationCpuMs   P50   6,8,   P90   8,6,   P95   9,3,   P99  10,8
+frameOverrunMs   P50  -8,7,   P90  -6,7,   P95  -5,8,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop33]
+frameDurationCpuMs   P50   7,7,   P90   9,7,   P95  10,5,   P99  11,3
+frameOverrunMs   P50  -7,8,   P90  -5,7,   P95  -4,9,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop33]
+frameDurationCpuMs   P50   7,7,   P90   9,4,   P95  10,1,   P99  11,6
+frameOverrunMs   P50  -7,7,   P90  -5,8,   P95  -5,3,   P99  -4,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop33]
+frameDurationCpuMs   P50   6,2,   P90   8,4,   P95   8,8,   P99  10,4
+frameOverrunMs   P50  -3,4,   P90  -3,0,   P95  -2,9,   P99  -2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop34]
+frameDurationCpuMs   P50   7,7,   P90   9,4,   P95  10,1,   P99  11,0
+frameOverrunMs   P50  -7,6,   P90  -5,9,   P95  -5,3,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop34]
+frameDurationCpuMs   P50   7,5,   P90   9,1,   P95   9,6,   P99  11,3
+frameOverrunMs   P50  -7,8,   P90  -6,2,   P95  -5,7,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop34]
+frameDurationCpuMs   P50   6,4,   P90   9,2,   P95  10,0,   P99  12,1
+frameOverrunMs   P50  -9,0,   P90   1,4,   P95   1,5,   P99   1,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop35]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95   9,7,   P99  10,4
+frameOverrunMs   P50  -7,8,   P90  -5,9,   P95  -5,7,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop35]
+frameDurationCpuMs   P50   8,0,   P90   9,7,   P95  10,2,   P99  11,4
+frameOverrunMs   P50  -7,4,   P90  -5,6,   P95  -5,1,   P99  -3,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop35]
+frameDurationCpuMs   P50   6,2,   P90   8,1,   P95   8,6,   P99   9,5
+frameOverrunMs   P50  -9,1,   P90  -7,3,   P95  -6,8,   P99  -5,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop36]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95  10,1,   P99  11,0
+frameOverrunMs   P50  -7,7,   P90  -5,9,   P95  -5,1,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop36]
+frameDurationCpuMs   P50   7,7,   P90   9,3,   P95  10,0,   P99  11,0
+frameOverrunMs   P50  -7,6,   P90  -5,8,   P95  -5,2,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop36]
+frameDurationCpuMs   P50   6,4,   P90   8,7,   P95   9,3,   P99  10,5
+frameOverrunMs   P50  -8,9,   P90  -6,6,   P95  -6,1,   P99  -5,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop37]
+frameDurationCpuMs   P50   7,7,   P90   9,6,   P95  10,4,   P99  11,4
+frameOverrunMs   P50  -7,6,   P90  -5,6,   P95  -4,9,   P99  -4,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop37]
+frameDurationCpuMs   P50   7,6,   P90   9,1,   P95   9,6,   P99  10,7
+frameOverrunMs   P50  -7,8,   P90  -6,2,   P95  -5,5,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop37]
+frameDurationCpuMs   P50   6,2,   P90   8,2,   P95   9,1,   P99   9,9
+frameOverrunMs   P50  -9,1,   P90  -7,2,   P95  -6,3,   P99  -5,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop38]
+frameDurationCpuMs   P50   7,7,   P90   9,5,   P95  10,0,   P99  10,7
+frameOverrunMs   P50  -7,6,   P90  -5,8,   P95  -5,2,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop38]
+frameDurationCpuMs   P50   7,4,   P90   9,1,   P95   9,6,   P99  10,5
+frameOverrunMs   P50  -7,9,   P90  -6,1,   P95  -5,6,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop38]
+frameDurationCpuMs   P50   6,3,   P90   8,3,   P95   8,9,   P99   9,9
+frameOverrunMs   P50  -9,0,   P90  -7,1,   P95  -6,6,   P99  -5,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop39]
+frameDurationCpuMs   P50   7,7,   P90   9,6,   P95  10,1,   P99  10,8
+frameOverrunMs   P50  -7,6,   P90  -5,8,   P95  -5,1,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop39]
+frameDurationCpuMs   P50   7,7,   P90   9,2,   P95   9,7,   P99  10,9
+frameOverrunMs   P50  -7,6,   P90  -6,0,   P95  -5,5,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop39]
+frameDurationCpuMs   P50   6,4,   P90   8,3,   P95   8,7,   P99   9,0
+frameOverrunMs   P50  -9,0,   P90  -7,1,   P95  -6,7,   P99  -5,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop40]
+frameDurationCpuMs   P50   7,8,   P90   9,7,   P95  10,3,   P99  11,5
+frameOverrunMs   P50  -7,6,   P90  -5,5,   P95  -5,0,   P99  -3,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop40]
+frameDurationCpuMs   P50   8,9,   P90  10,7,   P95  11,2,   P99  12,3
+frameOverrunMs   P50  -4,9,   P90   1,7,   P95   1,9,   P99   2,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop40]
+frameDurationCpuMs   P50   6,7,   P90   8,8,   P95   9,3,   P99  11,1
+frameOverrunMs   P50  -8,9,   P90  -6,5,   P95  -6,1,   P99  -5,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop41]
+frameDurationCpuMs   P50   8,8,   P90  10,6,   P95  11,4,   P99  12,1
+frameOverrunMs   P50  -5,2,   P90   1,7,   P95   1,8,   P99   2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop41]
+frameDurationCpuMs   P50   7,8,   P90   9,3,   P95  10,0,   P99  10,9
+frameOverrunMs   P50  -7,5,   P90  -5,9,   P95  -5,4,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop41]
+frameDurationCpuMs   P50   6,6,   P90   8,9,   P95   9,3,   P99  11,0
+frameOverrunMs   P50  -8,7,   P90  -6,5,   P95  -6,2,   P99  -5,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop42]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95   9,9,   P99  10,5
+frameOverrunMs   P50  -7,6,   P90  -5,8,   P95  -5,5,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop42]
+frameDurationCpuMs   P50   7,4,   P90   9,5,   P95  10,1,   P99  11,4
+frameOverrunMs   P50  -7,8,   P90  -4,1,   P95   1,5,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop42]
+frameDurationCpuMs   P50   6,7,   P90   8,7,   P95   9,2,   P99  10,8
+frameOverrunMs   P50  -8,6,   P90  -6,8,   P95  -6,2,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop43]
+frameDurationCpuMs   P50   7,9,   P90   9,7,   P95  10,1,   P99  11,5
+frameOverrunMs   P50  -7,4,   P90  -4,1,   P95   1,5,   P99   1,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop43]
+frameDurationCpuMs   P50   7,6,   P90   9,1,   P95   9,5,   P99  10,3
+frameOverrunMs   P50  -7,7,   P90  -6,1,   P95  -5,7,   P99  -5,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop43]
+frameDurationCpuMs   P50   6,4,   P90   8,5,   P95   8,9,   P99   9,9
+frameOverrunMs   P50  -8,9,   P90  -7,0,   P95  -6,6,   P99  -5,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop44]
+frameDurationCpuMs   P50   8,2,   P90   9,8,   P95  10,1,   P99  11,0
+frameOverrunMs   P50  -7,1,   P90  -3,6,   P95   1,5,   P99   1,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop44]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95   9,9,   P99  11,1
+frameOverrunMs   P50  -7,8,   P90  -5,8,   P95  -5,2,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop44]
+frameDurationCpuMs   P50   9,9,   P90  11,7,   P95  12,3,   P99  14,7
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,0,   P99   2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop45]
+frameDurationCpuMs   P50   7,7,   P90   9,5,   P95   9,9,   P99  11,1
+frameOverrunMs   P50  -7,7,   P90  -5,8,   P95  -5,2,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop45]
+frameDurationCpuMs   P50   7,5,   P90   9,0,   P95   9,5,   P99  10,5
+frameOverrunMs   P50  -7,8,   P90  -6,3,   P95  -5,7,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop45]
+frameDurationCpuMs   P50   7,0,   P90   9,9,   P95  10,7,   P99  11,7
+frameOverrunMs   P50  -8,5,   P90   1,5,   P95   1,6,   P99   1,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop46]
+frameDurationCpuMs   P50   7,7,   P90   9,7,   P95  10,3,   P99  11,5
+frameOverrunMs   P50  -7,6,   P90  -5,6,   P95  -5,1,   P99  -3,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop46]
+frameDurationCpuMs   P50   7,7,   P90   9,3,   P95   9,9,   P99  10,8
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,5,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop46]
+frameDurationCpuMs   P50   6,6,   P90   8,7,   P95   9,2,   P99  10,0
+frameOverrunMs   P50  -8,8,   P90  -6,6,   P95  -6,4,   P99  -5,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop47]
+frameDurationCpuMs   P50   9,4,   P90  10,6,   P95  11,2,   P99  12,4
+frameOverrunMs   P50   1,4,   P90   1,8,   P95   1,9,   P99   2,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop47]
+frameDurationCpuMs   P50   7,7,   P90   9,4,   P95   9,9,   P99  10,8
+frameOverrunMs   P50  -7,7,   P90  -5,9,   P95  -5,3,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop47]
+frameDurationCpuMs   P50   6,7,   P90  10,1,   P95  10,6,   P99  11,3
+frameOverrunMs   P50  -8,8,   P90   1,5,   P95   1,6,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop48]
+frameDurationCpuMs   P50   9,0,   P90  10,9,   P95  11,3,   P99  11,9
+frameOverrunMs   P50  -4,0,   P90   1,8,   P95   1,9,   P99   2,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop48]
+frameDurationCpuMs   P50   7,4,   P90   9,6,   P95  10,3,   P99  12,0
+frameOverrunMs   P50  -8,0,   P90  -1,6,   P95   1,5,   P99   1,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop48]
+frameDurationCpuMs   P50   6,2,   P90   8,1,   P95   8,6,   P99   9,8
+frameOverrunMs   P50  -9,1,   P90  -7,2,   P95  -6,6,   P99  -5,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop49]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95   9,8,   P99  10,8
+frameOverrunMs   P50  -7,7,   P90  -5,9,   P95  -5,5,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop49]
+frameDurationCpuMs   P50   7,5,   P90   9,3,   P95  10,0,   P99  11,2
+frameOverrunMs   P50  -7,8,   P90  -5,8,   P95  -5,1,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop49]
+frameDurationCpuMs   P50   7,7,   P90  10,8,   P95  11,7,   P99  13,0
+frameOverrunMs   P50  -7,9,   P90   1,6,   P95   1,7,   P99   1,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop50]
+frameDurationCpuMs   P50   7,9,   P90   9,5,   P95  10,1,   P99  11,0
+frameOverrunMs   P50  -7,5,   P90  -5,9,   P95  -5,3,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop50]
+frameDurationCpuMs   P50   7,7,   P90   9,5,   P95  10,0,   P99  12,3
+frameOverrunMs   P50  -7,6,   P90   1,3,   P95   1,6,   P99   1,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop50]
+frameDurationCpuMs   P50   6,1,   P90   8,4,   P95   8,7,   P99   9,4
+frameOverrunMs   P50  -9,1,   P90  -7,2,   P95  -6,6,   P99  -5,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop51]
+frameDurationCpuMs   P50   7,6,   P90   9,6,   P95  10,0,   P99  10,7
+frameOverrunMs   P50  -7,8,   P90  -5,7,   P95  -5,3,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop51]
+frameDurationCpuMs   P50   7,7,   P90   9,4,   P95   9,9,   P99  11,1
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,4,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop51]
+frameDurationCpuMs   P50   6,0,   P90   7,9,   P95   8,6,   P99   9,6
+frameOverrunMs   P50  -9,2,   P90  -7,6,   P95  -6,6,   P99  -6,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop52]
+frameDurationCpuMs   P50   7,9,   P90   9,5,   P95  10,0,   P99  11,0
+frameOverrunMs   P50  -7,4,   P90  -5,9,   P95  -5,4,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop52]
+frameDurationCpuMs   P50   7,7,   P90   9,3,   P95   9,7,   P99  10,4
+frameOverrunMs   P50  -7,7,   P90  -6,2,   P95  -5,7,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop52]
+frameDurationCpuMs   P50   6,4,   P90   8,5,   P95   8,8,   P99   9,3
+frameOverrunMs   P50  -9,0,   P90  -7,0,   P95  -6,6,   P99  -5,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop53]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95  10,0,   P99  10,8
+frameOverrunMs   P50  -7,4,   P90  -5,8,   P95  -5,3,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop53]
+frameDurationCpuMs   P50   7,7,   P90   8,9,   P95   9,4,   P99  10,7
+frameOverrunMs   P50  -7,6,   P90  -6,3,   P95  -5,9,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop53]
+frameDurationCpuMs   P50   6,5,   P90   8,7,   P95   9,1,   P99  10,5
+frameOverrunMs   P50  -8,9,   P90  -6,8,   P95  -6,3,   P99  -5,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop54]
+frameDurationCpuMs   P50   7,5,   P90   9,7,   P95  10,3,   P99  11,2
+frameOverrunMs   P50  -7,9,   P90  -5,6,   P95  -5,0,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop54]
+frameDurationCpuMs   P50   7,7,   P90   9,3,   P95   9,8,   P99  11,0
+frameOverrunMs   P50  -7,6,   P90  -6,0,   P95  -5,4,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop54]
+frameDurationCpuMs   P50   9,8,   P90  11,9,   P95  12,3,   P99  14,7
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,0,   P99   2,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop55]
+frameDurationCpuMs   P50   8,0,   P90   9,8,   P95  10,2,   P99  11,2
+frameOverrunMs   P50  -7,4,   P90  -5,6,   P95  -5,1,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop55]
+frameDurationCpuMs   P50   7,6,   P90   9,2,   P95   9,8,   P99  10,8
+frameOverrunMs   P50  -7,9,   P90  -6,1,   P95  -5,7,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop55]
+frameDurationCpuMs   P50  10,1,   P90  11,8,   P95  12,4,   P99  13,9
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,0,   P99   2,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop56]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95   9,9,   P99  11,0
+frameOverrunMs   P50  -7,7,   P90  -5,9,   P95  -5,3,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop56]
+frameDurationCpuMs   P50   7,7,   P90   9,4,   P95  10,2,   P99  11,4
+frameOverrunMs   P50  -7,7,   P90  -6,1,   P95  -5,2,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop56]
+frameDurationCpuMs   P50   6,3,   P90   8,2,   P95   8,6,   P99   9,8
+frameOverrunMs   P50  -9,0,   P90  -7,3,   P95  -6,8,   P99  -6,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop57]
+frameDurationCpuMs   P50   7,8,   P90   9,7,   P95  10,2,   P99  11,2
+frameOverrunMs   P50  -7,5,   P90  -5,6,   P95  -5,1,   P99  -3,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop57]
+frameDurationCpuMs   P50   7,6,   P90   9,1,   P95   9,5,   P99  10,3
+frameOverrunMs   P50  -7,7,   P90  -6,3,   P95  -5,9,   P99  -5,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop57]
+frameDurationCpuMs   P50   6,5,   P90   8,4,   P95   8,9,   P99  10,5
+frameOverrunMs   P50  -8,9,   P90  -7,2,   P95  -6,4,   P99  -5,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop58]
+frameDurationCpuMs   P50   7,9,   P90   9,8,   P95  10,3,   P99  11,3
+frameOverrunMs   P50  -7,4,   P90  -5,5,   P95  -5,1,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop58]
+frameDurationCpuMs   P50   7,6,   P90   9,2,   P95   9,9,   P99  10,6
+frameOverrunMs   P50  -7,7,   P90  -6,1,   P95  -5,5,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop58]
+frameDurationCpuMs   P50   9,0,   P90  11,8,   P95  12,9,   P99  14,9
+frameOverrunMs   P50   1,4,   P90   1,7,   P95   1,8,   P99   2,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop59]
+frameDurationCpuMs   P50   9,1,   P90  10,8,   P95  11,8,   P99  12,8
+frameOverrunMs   P50   1,4,   P90   1,7,   P95   1,8,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop59]
+frameDurationCpuMs   P50   7,7,   P90   9,1,   P95   9,7,   P99  11,9
+frameOverrunMs   P50  -7,7,   P90  -6,1,   P95  -5,6,   P99  -3,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop59]
+frameDurationCpuMs   P50   6,2,   P90   8,2,   P95   8,6,   P99   9,4
+frameOverrunMs   P50  -9,1,   P90  -7,3,   P95  -6,7,   P99  -6,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop60]
+frameDurationCpuMs   P50   9,5,   P90  11,2,   P95  11,7,   P99  12,7
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   2,1,   P99   2,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop60]
+frameDurationCpuMs   P50   7,5,   P90   9,0,   P95   9,4,   P99  10,3
+frameOverrunMs   P50  -7,9,   P90  -6,3,   P95  -5,8,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop60]
+frameDurationCpuMs   P50   6,2,   P90   8,3,   P95   8,8,   P99  10,5
+frameOverrunMs   P50  -9,2,   P90  -7,2,   P95  -6,3,   P99  -5,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop61]
+frameDurationCpuMs   P50   7,6,   P90   9,7,   P95  10,1,   P99  11,1
+frameOverrunMs   P50  -7,8,   P90  -5,5,   P95  -5,2,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop61]
+frameDurationCpuMs   P50   7,4,   P90   9,2,   P95   9,7,   P99  11,0
+frameOverrunMs   P50  -8,0,   P90  -6,2,   P95  -5,6,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop61]
+frameDurationCpuMs   P50   6,8,   P90   9,0,   P95   9,8,   P99  11,2
+frameOverrunMs   P50  -8,7,   P90  -6,6,   P95  -5,8,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop62]
+frameDurationCpuMs   P50   8,0,   P90   9,7,   P95  10,3,   P99  11,3
+frameOverrunMs   P50  -7,3,   P90  -5,8,   P95  -5,2,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop62]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95  10,1,   P99  11,3
+frameOverrunMs   P50  -7,7,   P90  -5,8,   P95  -5,4,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop62]
+frameDurationCpuMs   P50   6,2,   P90   8,6,   P95   9,1,   P99  10,3
+frameOverrunMs   P50  -9,2,   P90  -6,9,   P95  -6,1,   P99  -5,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop63]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95   9,7,   P99  10,5
+frameOverrunMs   P50  -7,7,   P90  -6,0,   P95  -5,7,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop63]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95  10,0,   P99  11,6
+frameOverrunMs   P50  -7,7,   P90  -5,9,   P95  -5,4,   P99  -3,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop63]
+frameDurationCpuMs   P50   6,3,   P90   8,2,   P95   8,6,   P99  10,2
+frameOverrunMs   P50  -9,1,   P90  -7,1,   P95  -6,9,   P99  -5,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop64]
+frameDurationCpuMs   P50   7,8,   P90   9,6,   P95  10,0,   P99  11,2
+frameOverrunMs   P50  -7,6,   P90  -5,7,   P95  -5,3,   P99  -4,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop64]
+frameDurationCpuMs   P50   7,5,   P90   9,5,   P95   9,7,   P99  10,7
+frameOverrunMs   P50  -7,8,   P90  -5,9,   P95  -5,4,   P99  -5,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop64]
+frameDurationCpuMs   P50   6,5,   P90   8,7,   P95   9,4,   P99  10,7
+frameOverrunMs   P50  -8,8,   P90  -6,9,   P95  -6,2,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop65]
+frameDurationCpuMs   P50   8,1,   P90  10,0,   P95  10,5,   P99  11,6
+frameOverrunMs   P50  -7,2,   P90   1,5,   P95   1,6,   P99   1,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop65]
+frameDurationCpuMs   P50   7,7,   P90   9,4,   P95   9,9,   P99  10,7
+frameOverrunMs   P50  -7,6,   P90  -5,9,   P95  -5,5,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop65]
+frameDurationCpuMs   P50  6,4,   P90  8,3,   P95  8,7,   P99  9,2
+frameOverrunMs   P50  -8,9,   P90  -7,1,   P95  -6,8,   P99  -6,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop66]
+frameDurationCpuMs   P50   7,9,   P90   9,6,   P95  10,0,   P99  10,8
+frameOverrunMs   P50  -7,4,   P90  -5,8,   P95  -5,4,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop66]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95   9,7,   P99  11,6
+frameOverrunMs   P50  -7,7,   P90  -6,1,   P95  -5,4,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop66]
+frameDurationCpuMs   P50  10,0,   P90  12,0,   P95  12,7,   P99  14,2
+frameOverrunMs   P50   1,5,   P90   1,9,   P95   1,9,   P99   2,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop67]
+frameDurationCpuMs   P50   7,8,   P90   9,6,   P95  10,2,   P99  11,2
+frameOverrunMs   P50  -7,5,   P90  -5,5,   P95  -4,8,   P99  -4,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop67]
+frameDurationCpuMs   P50   7,5,   P90   9,3,   P95   9,7,   P99  10,7
+frameOverrunMs   P50  -7,9,   P90  -6,1,   P95  -5,7,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop67]
+frameDurationCpuMs   P50   6,2,   P90   8,0,   P95   8,7,   P99   9,3
+frameOverrunMs   P50  -9,1,   P90  -7,3,   P95  -6,9,   P99  -6,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop68]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95  10,0,   P99  10,9
+frameOverrunMs   P50  -7,6,   P90  -5,8,   P95  -5,3,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop68]
+frameDurationCpuMs   P50   7,5,   P90   9,4,   P95  10,0,   P99  10,8
+frameOverrunMs   P50  -7,9,   P90  -6,1,   P95  -5,4,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop68]
+frameDurationCpuMs   P50   7,1,   P90  10,5,   P95  11,1,   P99  13,0
+frameOverrunMs   P50  -8,4,   P90   1,5,   P95   1,7,   P99   2,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop69]
+frameDurationCpuMs   P50   7,9,   P90   9,6,   P95   9,9,   P99  10,8
+frameOverrunMs   P50  -7,5,   P90  -5,9,   P95  -5,6,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop69]
+frameDurationCpuMs   P50   7,5,   P90   9,3,   P95  10,0,   P99  10,8
+frameOverrunMs   P50  -7,8,   P90  -6,0,   P95  -5,4,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop69]
+frameDurationCpuMs   P50   7,4,   P90  10,5,   P95  11,5,   P99  13,3
+frameOverrunMs   P50  -8,0,   P90   1,6,   P95   1,7,   P99   2,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop70]
+frameDurationCpuMs   P50   7,6,   P90   9,5,   P95   9,9,   P99  11,0
+frameOverrunMs   P50  -7,7,   P90  -5,7,   P95  -5,2,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop70]
+frameDurationCpuMs   P50   7,8,   P90   9,1,   P95   9,9,   P99  11,3
+frameOverrunMs   P50  -7,5,   P90  -6,0,   P95  -5,5,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop70]
+frameDurationCpuMs   P50   6,5,   P90   8,3,   P95   8,9,   P99  10,0
+frameOverrunMs   P50  -9,0,   P90  -7,0,   P95  -6,6,   P99  -5,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop71]
+frameDurationCpuMs   P50   7,7,   P90   9,5,   P95  10,1,   P99  11,6
+frameOverrunMs   P50  -7,6,   P90  -5,7,   P95  -5,2,   P99  -3,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop71]
+frameDurationCpuMs   P50   8,9,   P90  10,5,   P95  11,0,   P99  12,3
+frameOverrunMs   P50  -4,0,   P90   1,7,   P95   1,9,   P99   2,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop71]
+frameDurationCpuMs   P50   6,5,   P90   8,7,   P95   9,2,   P99  10,5
+frameOverrunMs   P50  -8,8,   P90  -6,9,   P95  -6,5,   P99  -5,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop72]
+frameDurationCpuMs   P50   7,6,   P90   9,7,   P95  10,2,   P99  11,0
+frameOverrunMs   P50  -7,7,   P90  -5,8,   P95  -5,3,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop72]
+frameDurationCpuMs   P50   7,8,   P90   9,2,   P95   9,7,   P99  11,3
+frameOverrunMs   P50  -7,5,   P90  -6,1,   P95  -5,8,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop72]
+frameDurationCpuMs   P50   6,7,   P90   8,6,   P95   8,9,   P99   9,8
+frameOverrunMs   P50  -8,7,   P90  -6,9,   P95  -6,6,   P99  -5,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop73]
+frameDurationCpuMs   P50   8,4,   P90  10,4,   P95  10,7,   P99  12,1
+frameOverrunMs   P50  -6,9,   P90   1,6,   P95   1,8,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop73]
+frameDurationCpuMs   P50   7,7,   P90   9,3,   P95   9,6,   P99  10,6
+frameOverrunMs   P50  -7,6,   P90  -6,0,   P95  -5,4,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop73]
+frameDurationCpuMs   P50   6,3,   P90   8,3,   P95   9,0,   P99  10,2
+frameOverrunMs   P50  -9,1,   P90  -7,3,   P95  -6,4,   P99  -5,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop74]
+frameDurationCpuMs   P50   7,9,   P90   9,6,   P95  10,2,   P99  11,9
+frameOverrunMs   P50  -7,5,   P90  -5,7,   P95  -5,1,   P99  -3,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop74]
+frameDurationCpuMs   P50   7,5,   P90   9,0,   P95   9,5,   P99  11,0
+frameOverrunMs   P50  -7,8,   P90  -6,2,   P95  -5,8,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop74]
+frameDurationCpuMs   P50   7,0,   P90  10,1,   P95  10,6,   P99  12,0
+frameOverrunMs   P50  -8,4,   P90   1,5,   P95   1,7,   P99   2,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop75]
+frameDurationCpuMs   P50   7,6,   P90   9,5,   P95   9,9,   P99  10,5
+frameOverrunMs   P50  -7,7,   P90  -5,9,   P95  -5,5,   P99  -4,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop75]
+frameDurationCpuMs   P50   7,6,   P90   9,2,   P95   9,6,   P99  10,7
+frameOverrunMs   P50  -7,7,   P90  -6,2,   P95  -5,6,   P99  -4,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop75]
+frameDurationCpuMs   P50   6,9,   P90  10,1,   P95  10,9,   P99  12,4
+frameOverrunMs   P50  -8,5,   P90   1,5,   P95   1,8,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop76]
+frameDurationCpuMs   P50   9,3,   P90  10,5,   P95  11,2,   P99  12,2
+frameOverrunMs   P50   1,6,   P90   1,9,   P95   2,1,   P99   2,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop76]
+frameDurationCpuMs   P50   7,6,   P90   9,0,   P95   9,7,   P99  10,2
+frameOverrunMs   P50  -7,7,   P90  -6,3,   P95  -5,7,   P99  -5,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop76]
+frameDurationCpuMs   P50   9,9,   P90  11,6,   P95  12,1,   P99  13,2
+frameOverrunMs   P50   1,5,   P90   1,8,   P95   1,9,   P99   2,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop77]
+frameDurationCpuMs   P50   7,8,   P90  10,0,   P95  10,4,   P99  11,9
+frameOverrunMs   P50  -6,2,   P90   1,5,   P95   1,7,   P99   2,1
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop77]
+frameDurationCpuMs   P50   7,5,   P90   8,8,   P95   9,4,   P99  11,1
+frameOverrunMs   P50  -7,8,   P90  -6,5,   P95  -5,9,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop77]
+frameDurationCpuMs   P50   6,6,   P90   8,5,   P95   9,0,   P99  11,0
+frameOverrunMs   P50  -8,9,   P90  -6,9,   P95  -6,3,   P99  -4,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop78]
+frameDurationCpuMs   P50   8,0,   P90   9,5,   P95  10,0,   P99  11,5
+frameOverrunMs   P50  -7,2,   P90  -5,9,   P95  -5,2,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop78]
+frameDurationCpuMs   P50   7,6,   P90   9,4,   P95  10,0,   P99  11,1
+frameOverrunMs   P50  -7,8,   P90  -5,9,   P95  -5,4,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop78]
+frameDurationCpuMs   P50   9,6,   P90  11,4,   P95  12,5,   P99  13,5
+frameOverrunMs   P50   1,4,   P90   1,8,   P95   2,0,   P99   2,4
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop79]
+frameDurationCpuMs   P50   8,0,   P90   9,5,   P95  10,1,   P99  11,4
+frameOverrunMs   P50  -7,4,   P90  -5,7,   P95  -5,2,   P99  -3,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop79]
+frameDurationCpuMs   P50   7,9,   P90   9,6,   P95  10,0,   P99  10,9
+frameOverrunMs   P50  -7,4,   P90  -5,7,   P95  -5,3,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop79]
+frameDurationCpuMs   P50   7,2,   P90  10,7,   P95  11,2,   P99  12,2
+frameOverrunMs   P50  -8,2,   P90   1,6,   P95   1,8,   P99   2,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop80]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95   9,8,   P99  10,8
+frameOverrunMs   P50  -7,6,   P90  -5,7,   P95  -5,3,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop80]
+frameDurationCpuMs   P50   7,6,   P90   9,0,   P95   9,6,   P99  10,5
+frameOverrunMs   P50  -7,8,   P90  -6,3,   P95  -5,8,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop80]
+frameDurationCpuMs   P50   6,1,   P90   8,5,   P95   9,3,   P99  11,3
+frameOverrunMs   P50  -9,2,   P90  -7,2,   P95  -6,3,   P99  -4,3
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop81]
+frameDurationCpuMs   P50   7,8,   P90   9,4,   P95  10,0,   P99  11,7
+frameOverrunMs   P50  -7,5,   P90  -5,8,   P95  -5,1,   P99  -3,8
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop81]
+frameDurationCpuMs   P50   7,4,   P90   9,0,   P95   9,5,   P99  10,5
+frameOverrunMs   P50  -7,8,   P90  -6,3,   P95  -6,0,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop81]
+frameDurationCpuMs   P50   6,5,   P90   8,5,   P95   8,9,   P99  10,9
+frameOverrunMs   P50  -8,9,   P90  -7,0,   P95  -6,6,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop82]
+frameDurationCpuMs   P50   7,8,   P90   9,7,   P95  10,2,   P99  11,1
+frameOverrunMs   P50  -7,5,   P90  -5,7,   P95  -5,2,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop82]
+frameDurationCpuMs   P50   7,7,   P90   9,3,   P95  10,0,   P99  10,9
+frameOverrunMs   P50  -7,6,   P90  -6,1,   P95  -5,5,   P99  -4,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop82]
+frameDurationCpuMs   P50   6,3,   P90   8,1,   P95   8,4,   P99   9,6
+frameOverrunMs   P50  -9,0,   P90  -7,3,   P95  -6,7,   P99  -5,6
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop83]
+frameDurationCpuMs   P50   7,8,   P90   9,5,   P95  10,0,   P99  10,5
+frameOverrunMs   P50  -7,5,   P90  -5,7,   P95  -5,4,   P99  -4,7
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop83]
+frameDurationCpuMs   P50   7,6,   P90   9,3,   P95  10,1,   P99  11,0
+frameOverrunMs   P50  -7,8,   P90  -5,9,   P95  -5,3,   P99  -4,2
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim3 loop83]
+frameDurationCpuMs   P50   6,6,   P90   8,6,   P95   9,0,   P99  10,5
+frameOverrunMs   P50  -8,8,   P90  -6,8,   P95  -6,5,   P99  -5,0
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim1 loop84]
+frameDurationCpuMs   P50   7,8,   P90   9,4,   P95  10,0,   P99  10,9
+frameOverrunMs   P50  -7,6,   P90  -5,7,   P95  -5,3,   P99  -4,5
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9
+ShaderPerformanceTest_animation[anim2 loop84]
+frameDurationCpuMs   P50   7,9,   P90   9,7,   P95  10,5,   P99  11,4
+frameOverrunMs   P50  -7,4,   P90  -4,3,   P95   1,6,   P99   1,9
+Traces: Iteration 0 1 2 3 4 5 6 7 8 9

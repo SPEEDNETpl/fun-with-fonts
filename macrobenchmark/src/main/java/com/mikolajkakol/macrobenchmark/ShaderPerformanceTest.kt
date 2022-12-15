@@ -27,7 +27,7 @@ class ShaderPerformanceTest(
         @Parameterized.Parameters(name = "anim{1} loop{0}")
         @JvmStatic
         fun initParameters() = buildList {
-            repeat(10) {
+            repeat(100) {
                 add(arrayOf(it, "1"))
                 add(arrayOf(it, "2"))
                 add(arrayOf(it, "3"))
@@ -40,13 +40,13 @@ class ShaderPerformanceTest(
         packageName = "com.mikolajkakol.myapplication",
         metrics = listOf(FrameTimingMetric()),
         compilationMode = CompilationMode.Full(),
-        iterations = 3,
+        iterations = 10,
         startupMode = StartupMode.HOT,
         setupBlock = {
             startActivityAndWait()
             device.findObject(By.text("Shader performance $id"))?.click()
         }
     ) {
-        Thread.sleep(500)
+        Thread.sleep(100)
     }
 }

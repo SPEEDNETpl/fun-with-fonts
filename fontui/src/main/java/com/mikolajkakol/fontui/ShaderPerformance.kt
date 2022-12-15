@@ -6,8 +6,7 @@ import androidx.annotation.RequiresApi
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.text.TextDelegate
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -15,12 +14,10 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.*
 import androidx.compose.ui.graphics.Shader
-import androidx.compose.ui.layout.layout
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalDensity
-import androidx.compose.ui.platform.LocalFontFamilyResolver
 import androidx.compose.ui.text.*
-import androidx.compose.ui.unit.sp
+import kotlin.math.abs
 
 @Composable
 fun ShaderPerformance1() = Column {
@@ -70,6 +67,8 @@ fun ShaderPerformance2() {
 fun ShaderPerformance3() = Column {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
 
+    data class Info(val layout: TextLayoutResult, val width: Float, val height: Float)
+
     val shader = remember {
         RuntimeShader(SHADER_ANIM_COLOR)
             .apply { setFloatUniform("iDuration", DURATION) }
@@ -78,41 +77,31 @@ fun ShaderPerformance3() = Column {
     val time by timeAnimation()
 
     val textMeasurer = rememberTextMeasurer()
-    var textLayoutResult by remember {
-        mutableStateOf<TextLayoutResult?>(null)
+    val info = remember(prefText) {
+        textMeasurer.measure(
+            text = AnnotatedString(prefText),
+            style = TextStyle(brush = brush)
+        ).let { textLayout ->
+            val lines = (0 until textLayout.lineCount)
+            val start = lines.minOf { textLayout.getLineLeft(it) }
+            val end = lines.maxOf { textLayout.getLineRight(it) }
+            val top = textLayout.getLineTop(lines.first)
+            val bottom = textLayout.getLineBottom(lines.last)
+            val width = abs(end - start)
+            val height = bottom - top
+            shader.setFloatUniform("iResolution", width, height)
+            Info(textLayout, width, height)
+        }
     }
+    val wdp = with(LocalDensity.current) { info.width.toDp() }
+    val hdp = with(LocalDensity.current) { info.height.toDp() }
 
     Canvas(
         Modifier
-            .fillMaxSize()
-            .layout { measurable, constraints ->
-                val placeable = measurable.measure(constraints)
-                // TextLayout can be done any time prior to its use in draw, including in a
-                // background thread.
-                // In this sample, text layout is done in compose layout. This way the layout call
-                // can be restarted when async font loading completes due to the fact that
-                // `.measure` call is executed in `.layout`.
-                textLayoutResult = textMeasurer.measure(
-                    text = AnnotatedString(prefText),
-                    style = TextStyle(brush = brush)
-                )
-                val layout = textLayoutResult!!
-                val lines = (0 until layout.lineCount)
-                val start = lines.minOf { layout.getLineLeft(it) }
-                val end = lines.maxOf { layout.getLineRight(it) }
-                val top = layout.getLineTop(lines.first)
-                val bottom = layout.getLineBottom(lines.last)
-                shader.setFloatUniform(
-                    "iResolution",
-                    Math.abs(end - start),
-                    (bottom - top),
-                )
-                layout(placeable.width, placeable.height) {
-                    placeable.placeRelative(0, 0)
-                }
-            }) {
+            .size(wdp, hdp)
+    ) {
         shader.setFloatUniform("iTime", time)
-        textLayoutResult?.let { drawText(it, brush) }
+        drawText(info.layout, brush)
     }
 }
 

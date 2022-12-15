@@ -2,7 +2,11 @@ import java.io.File
 
 fun parseResults(file: File): List<TestRun> {
     return file.readLines()
-        .windowed(2, 4)
+        .filter {
+            it.startsWith("ShaderPerformanceTest_animation") ||
+                    it.startsWith("frameDurationCpuMs")
+        }
+        .chunked(2)
         .map { (lineName, lineResults) ->
             val (name, loop) = testInfo(lineName)
 
