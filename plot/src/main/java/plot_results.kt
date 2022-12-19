@@ -8,6 +8,8 @@ import org.jetbrains.letsPlot.ggplot
 import org.jetbrains.letsPlot.intern.Plot
 import org.jetbrains.letsPlot.label.ggtitle
 import org.jetbrains.letsPlot.letsPlot
+import org.jetbrains.letsPlot.scale.scaleColorManual
+import org.jetbrains.letsPlot.scale.scaleFillManual
 import java.io.File
 
 fun main() {
@@ -21,14 +23,22 @@ fun main() {
 }
 
 fun saveMultiple(name: String, workingDir: File, plotFactory: (percentile: Int) -> Plot) {
+    val factory = decorateFactory(plotFactory)
     val bunch = GGBunch()
-    bunch.addPlot(plotFactory(50), 0, 0)
-    bunch.addPlot(plotFactory(90), 0, 400)
-    bunch.addPlot(plotFactory(95), 0, 800)
+    bunch.addPlot(factory(50), 0, 0)
+    bunch.addPlot(factory(90), 0, 400)
+    bunch.addPlot(factory(95), 0, 800)
     ggsave(bunch, "${name}_mix.png", path = workingDir.absolutePath)
-    ggsave(plotFactory(50), "${name}_50.png", path = workingDir.absolutePath)
-    ggsave(plotFactory(90), "${name}_90.png", path = workingDir.absolutePath)
-    ggsave(plotFactory(95), "${name}_95.png", path = workingDir.absolutePath)
+    ggsave(factory(50), "${name}_50.png", path = workingDir.absolutePath)
+    ggsave(factory(90), "${name}_90.png", path = workingDir.absolutePath)
+    ggsave(factory(95), "${name}_95.png", path = workingDir.absolutePath)
+}
+
+private fun decorateFactory(original: (percentile: Int) -> Plot): (Int) -> Plot = {
+    val colors = listOf("#F33A00", "#14BEBE", "#AAE95A")
+    original(it) +
+            scaleFillManual(colors) +
+            scaleColorManual(colors)
 }
 
 private fun plotBox(inputData: List<TestRun>, percentile: Int): Plot {
