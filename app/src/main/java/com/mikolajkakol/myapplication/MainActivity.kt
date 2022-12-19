@@ -64,6 +64,5 @@ class MainActivity : ComponentActivity() {
         Button(onClick = { navController.navigate("shaderPerf3") }) {
             Text(text = "Shader performance 3")
         }
-
     }
 }

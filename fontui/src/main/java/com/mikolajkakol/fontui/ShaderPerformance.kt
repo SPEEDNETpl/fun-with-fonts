@@ -1,8 +1,8 @@
+@file:SuppressLint("NewApi")
 package com.mikolajkakol.fontui
 
+import android.annotation.SuppressLint
 import android.graphics.*
-import android.os.Build
-import androidx.annotation.RequiresApi
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Column
@@ -21,8 +21,6 @@ import kotlin.math.abs
 
 @Composable
 fun ShaderPerformance1() = Column {
-    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
-
     val shader = remember {
         RuntimeShader(SHADER_ANIM_COLOR)
             .apply { setFloatUniform("iDuration", DURATION) }
@@ -48,7 +46,40 @@ fun ShaderPerformance1() = Column {
 
 @Composable
 fun ShaderPerformance2() {
-    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
+    class AnimShaderBrush(val time: Float = -1f) : ShaderBrush() {
+        private var internalShader: RuntimeShader? = null
+        private var previousSize: Size? = null
+
+        override fun createShader(size: Size): Shader {
+            val shader = if (internalShader == null || previousSize != size) {
+                RuntimeShader(SHADER_ANIM_COLOR).apply {
+                    setFloatUniform("iResolution", size.width, size.height)
+                    setFloatUniform("iDuration", DURATION)
+                }
+            } else {
+                internalShader!!
+            }
+            shader.setFloatUniform("iTime", time)
+            internalShader = shader
+            previousSize = size
+            return shader
+        }
+
+        fun setTime(newTime: Float): AnimShaderBrush {
+            return AnimShaderBrush(newTime).apply {
+                this@apply.internalShader = this@AnimShaderBrush.internalShader
+                this@apply.previousSize = this@AnimShaderBrush.previousSize
+            }
+        }
+
+        override fun equals(other: Any?): Boolean {
+            if (other !is AnimShaderBrush) return false
+            if (other.internalShader != this.internalShader) return false
+            if (other.previousSize != this.previousSize) return false
+            if (other.time != this.time) return false
+            return true
+        }
+    }
 
     var brush by remember { mutableStateOf(AnimShaderBrush()) }
     val time by timeAnimation()
@@ -65,8 +96,6 @@ fun ShaderPerformance2() {
 
 @Composable
 fun ShaderPerformance3() = Column {
-    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) return
-
     data class Info(val layout: TextLayoutResult, val width: Float, val height: Float)
 
     val shader = remember {
@@ -105,42 +134,6 @@ fun ShaderPerformance3() = Column {
     }
 }
 
-@Suppress("EqualsOrHashCode")
-@RequiresApi(Build.VERSION_CODES.TIRAMISU)
-private class AnimShaderBrush(val time: Float = -1f) : ShaderBrush() {
-    private var internalShader: RuntimeShader? = null
-    private var previousSize: Size? = null
-
-    override fun createShader(size: Size): Shader {
-        val shader = if (internalShader == null || previousSize != size) {
-            RuntimeShader(SHADER_ANIM_COLOR).apply {
-                setFloatUniform("iResolution", size.width, size.height)
-                setFloatUniform("iDuration", DURATION)
-            }
-        } else {
-            internalShader!!
-        }
-        shader.setFloatUniform("iTime", time)
-        internalShader = shader
-        previousSize = size
-        return shader
-    }
-
-    fun setTime(newTime: Float): AnimShaderBrush {
-        return AnimShaderBrush(newTime).apply {
-            this@apply.internalShader = this@AnimShaderBrush.internalShader
-            this@apply.previousSize = this@AnimShaderBrush.previousSize
-        }
-    }
-
-    override fun equals(other: Any?): Boolean {
-        if (other !is AnimShaderBrush) return false
-        if (other.internalShader != this.internalShader) return false
-        if (other.previousSize != this.previousSize) return false
-        if (other.time != this.time) return false
-        return true
-    }
-}
 
 private const val DURATION = 2000f
 private const val SHADER_ANIM_COLOR = """
