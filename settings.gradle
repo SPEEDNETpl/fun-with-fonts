@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 rootProject.name = "Fun with fonts"
 include ':app'
 include ':fontui'
+include ':macrobenchmark'
+include ':plot'
