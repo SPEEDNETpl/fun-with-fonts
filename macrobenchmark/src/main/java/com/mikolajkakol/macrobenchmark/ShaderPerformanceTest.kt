@@ -44,6 +44,7 @@ class ShaderPerformanceTest(
         startupMode = StartupMode.HOT,
         setupBlock = {
             startActivityAndWait()
+            device.findObject(By.text("Shader performance"))?.click()
             device.findObject(By.text("Shader performance $id"))?.click()
         }
     ) {

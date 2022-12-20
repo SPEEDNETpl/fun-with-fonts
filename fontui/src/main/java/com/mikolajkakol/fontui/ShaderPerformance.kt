@@ -1,11 +1,11 @@
 @file:SuppressLint("NewApi")
+
 package com.mikolajkakol.fontui
 
 import android.annotation.SuppressLint
 import android.graphics.*
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
@@ -20,7 +20,7 @@ import androidx.compose.ui.text.*
 import kotlin.math.abs
 
 @Composable
-fun ShaderPerformance1() = Column {
+fun ShaderPerformance1() = repeat(REPEATS) {
     val shader = remember {
         RuntimeShader(SHADER_ANIM_COLOR)
             .apply { setFloatUniform("iDuration", DURATION) }
@@ -45,7 +45,7 @@ fun ShaderPerformance1() = Column {
 }
 
 @Composable
-fun ShaderPerformance2() {
+fun ShaderPerformance2() = repeat(REPEATS) {
     class AnimShaderBrush(val time: Float = -1f) : ShaderBrush() {
         private var internalShader: RuntimeShader? = null
         private var previousSize: Size? = null
@@ -95,7 +95,7 @@ fun ShaderPerformance2() {
 }
 
 @Composable
-fun ShaderPerformance3() = Column {
+fun ShaderPerformance3() = repeat(REPEATS) {
     data class Info(val layout: TextLayoutResult, val width: Float, val height: Float)
 
     val shader = remember {
@@ -135,6 +135,7 @@ fun ShaderPerformance3() = Column {
 }
 
 
+private const val REPEATS = 30
 private const val DURATION = 2000f
 private const val SHADER_ANIM_COLOR = """
     uniform float2 iResolution;
