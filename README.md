@@ -7,3 +7,7 @@
 ### Part 2
 * [blog](https://speednet.pl/blog/fun-with-fonts2/)
 * [code](https://github.com/SPEEDNETpl/fun-with-fonts/blob/main/fontui/src/main/java/com/mikolajkakol/fontui/VariableFont.kt)
+
+### Part 3
+* [blog](https://speednet.pl/blog/fun-with-fonts3/)
+* [code](https://github.com/SPEEDNETpl/fun-with-fonts/blob/main/fontui/src/main/java/com/mikolajkakol/fontui/ShaderFont.kt)
